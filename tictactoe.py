@@ -181,12 +181,8 @@ def minimax(board):
     best_action = None
     if player_turn == X:
         value, best_action = max_value(board)
-        print(value)
-        print(best_action)
     else:
         value, best_action = min_value(board)
-        print(value)
-        print(best_action)
     return best_action
 
 

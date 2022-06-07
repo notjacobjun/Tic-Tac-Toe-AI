@@ -112,7 +112,6 @@ while True:
         # Check for AI move
         if user != player and not game_over:
             if ai_turn:
-                print(f"board before AI's turn: {board}")
                 time.sleep(0.5)
                 move = ttt.minimax(board)
                 board = ttt.result(board, move)
@@ -126,7 +125,6 @@ while True:
         # Check for a user move
         click, _, _ = pygame.mouse.get_pressed()
         if click == 1 and user == player and not game_over:
-            print(f"board before players's turn: {board}")
             mouse = pygame.mouse.get_pos()
             for i in range(3):
                 for j in range(3):
